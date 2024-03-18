@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = 'https://www.onceuponachef.com/';  
+   let authorPhoto ="https://www.onceuponachef.com/images/2019/04/jenn-segal@2x.jpg";
+   let authorName ="JENN SEGAL";
 
    return (
       <div>
-         <img src={authorPhoto} alt = "" style={{objectFit: "contain", borderRadius: "50%"}} />
+         <img src={authorPhoto} alt = "JENN SEGAL" style={{objectFit: "contain", borderRadius: "50%"}} />
          <div>
             <h3>{authorName}</h3>
             <a href={authorLink}></a> 
@@ -16,8 +16,11 @@ const RecipeAuthor = () => {
    );
 }
 
+    
+
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Heavy cream","sugar",
+   "vanilla extract","25 Oreo Thins","Cocoa powder"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -49,7 +52,7 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://www.onceuponachef.com/images/2023/08/icebox-cake-1120x732.jpg" alt="" className="imageUpdates"/>
    );
 }
 
